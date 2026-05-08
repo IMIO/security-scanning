@@ -13,4 +13,6 @@ paths = [
   '''(^|/)tests?/.*\.(py|cfg|json|yml|yaml)$''',
   '''(^|/)(example|sample|demo|docs?)/''',
   '''\.cfg\.example$''',
+  '''(openlayers|geoexplorer)/(examples|tests|skins)/''',
+  '''profiles/.*/templates\.json$''',
 ]
