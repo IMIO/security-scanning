@@ -1,0 +1,24 @@
+title = "IMIO Gitleaks Config"
+
+[extend]
+useDefault = true
+
+[[allowlist.regexes]]
+description = "Buildout example passwords"
+regex = '''(?i)password\s*=\s*(secret|changeme|example|test|todo|xxx|placeholder)'''
+
+[[allowlist.regexes]]
+description = "Vault placeholder paths"
+regex = '''vault:secret/'''
+
+[[allowlist.paths]]
+description = "Tests et fixtures"
+regex = '''(^|/)tests?/.*\.(py|cfg|json|yml|yaml)$'''
+
+[[allowlist.paths]]
+description = "Fichiers d'exemple et documentation"
+regex = '''(^|/)(example|sample|demo|docs?)/'''
+
+[[allowlist.paths]]
+description = "Fichiers de configuration buildout"
+regex = '''\.cfg\.example$'''
